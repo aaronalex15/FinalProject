@@ -1,0 +1,684 @@
+/* Navbar Styles */
+.nav {
+  font-family: 'Oswald', sans-serif; /* Urban-themed font */
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text for contrast */
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  position: fixed; /* Fix navbar at the top */
+  top: 0;
+  left: 0; /* Align navbar to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: left;
+  width: 100%; /* Full width */
+}
+
+.navbar a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  margin-right: 20px; /* Space between links */
+  padding: 10px 15px; /* Padding for clickable area */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.navbar a:hover {
+  color: #eb1818; /* Highlight color on hover */
+  background-color: #333333; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  margin-right: 20px; /* Space between links */
+  padding: 10px 15px; /* Padding for clickable area */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.container a:hover {
+  color: #eb1818; /* Highlight color on hover */
+  background-color: #333333; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+/* Set the font and color for the title */
+}
+.title {
+  font-family: 'Oswald', sans-serif; /* Urban-themed font */
+  color: white;
+}
+
+/* Reset body styles and set a black background */
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif; /* Urban-themed font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+/* Style the container for merch list */
+.merchandise-list-container {
+  position: relative;
+  margin: 50px;
+  border-radius: 8px;
+  background-color: #020202;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the filter options */
+.filter-container {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute items */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  width: 100%; /* Make sure it spans the full width */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  margin: 20px 0; /* Add some space above and below the container */
+  background-color: #1a1a1a; /* Match the urban theme */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Style the filter dropdown */
+.filter-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #eb1818; /* Border color */
+  background: linear-gradient(135deg, #333, #555); /* Gradient background */
+  color: white; /* White text for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: background 0.3s ease, border 0.3s ease;
+  flex: 1; /* Allow the dropdown to grow and shrink */
+  max-width: 200px; /* Limit the maximum width */
+  margin: 0 10px; /* Space between the filters */
+}
+
+/* Style the sort button */
+.sort-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #eb1818; /* Border color */
+  background-color: #dbcccc; /* Light grey background */
+  color: linear-gradient(135deg, #333, #555); /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  flex: 1; /* Allow the button to grow and shrink */
+  max-width: 200px; /* Limit the maximum width */
+  margin: 0 10px; /* Space between the filters */
+}
+
+.sort-button:hover {
+  background-color: #8faab3; /* Darken the background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.merchandise-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0; /* Remove spacing */
+  padding: 40px 20px;
+  background-color: #f7f7f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.merchandise-card {
+  position: relative;
+  background-color:  #01010e;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px; /* Increased width */
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.merchandise-card:hover {
+  transform: translateY(-5px);
+}
+
+.merchandise-card img {
+  width: 100%;
+  max-height: 400px; /* Increased max height */
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: opacity 0.3s ease;
+}
+
+.merchandise-card:hover img {
+  opacity: 1;
+}
+
+.merchandise-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.merchandise-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f4f1f1;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.merchandise-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f7f3f3;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.merchandise-card button {
+  background: linear-gradient(135deg, #1a1a1a, #333333); /* Gradient background for a sleek look */
+  border: 2px solid #e60012; /* Red border for a bold urban feel */
+  padding: 15px 25px; /* Increase padding for a more substantial button */
+  border-radius: 30px; /* Rounded corners for a modern look */
+  color: #ffffff; /* White text for contrast */
+  font-family: 'Oswald', sans-serif; /* Urban-themed font */
+  font-size: 1.2rem; /* Slightly larger font size */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  letter-spacing: 1px; /* Space out the letters slightly */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 10px; /* Spacing between buttons */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
+  position: relative; /* Positioning for pseudo-elements */
+  overflow: hidden; /* Ensure pseudo-elements stay within the button */
+}
+
+.merchandise-card button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(230, 0, 18, 0.2); /* Transparent red overlay */
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.merchandise-card button:hover::before {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.merchandise-card button:hover {
+  background: linear-gradient(135deg, #333333, #4d4d4d); /* Slightly lighter gradient on hover */
+  transform: translateY(-3px); /* Slightly lift button on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+.merchandise-card button:active {
+  transform: translateY(0); /* Remove lift on click */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Return to original shadow on click */
+}
+
+.merchandise-card button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.5); /* Custom focus outline */
+}
+
+body.registration-page {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1620633437938-be73c35eb77e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-repeat: no-repeat; /* Prevent the background image from tiling */
+  background-attachment: fixed;
+  background-position: top left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif; /* Set font for the entire page */
+}
+
+#regForm {
+  width: 350px;
+  height: 500px;
+  background-color: rgba(69, 27, 4, 0.9); /* Semi-transparent background */
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.reg-form-body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif; /* Set font */
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 10px; /* Add spacing between labels */
+}
+
+.reg-input {
+  width: 70%; /* Adjusted width */
+  height: 40px; /* Increase height for better input visibility */
+  background: #f8f8f8;
+  margin: 10px auto; /* Adjusted margin */
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px; /* Adjusted font size */
+}
+
+.swap {
+  color: white;
+  font-size: 16px; /* Adjusted font size */
+  margin-top: 20px; /* Add margin top */
+}
+
+.button-55,
+.button-55-1 {
+  background-color: rgb(143, 170, 179);
+  color: #41403e;
+  cursor: pointer;
+  font-family: 'Georgia', serif; /* Set font */
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 15px 30px; /* Increased padding for better button visibility */
+  margin: 20px auto; /* Adjusted margin */
+  text-decoration: none;
+  border-radius: 30px; /* Rounded corners */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Soft border */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px; /* Soft shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.button-55:hover,
+.button-55-1:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; /* Enhance shadow on hover */
+  transform: translateY(-3px); /* Lift button on hover */
+}
+
+.button-55:focus,
+.button-55-1:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px; /* Soft focus shadow */
+}
+
+.reg-banner {
+  color: white;
+  font-size: 24px; /* Adjusted font size */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+.edit-profile {
+  font-family: 'Georgia', serif;
+}
+
+#profileForm {
+  padding: 30px; /* Increased padding for better spacing */
+  width: 350px;
+  background-color: rgba(69, 27, 4, 0.9); /* Semi-transparent background */
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.profile-form-body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 10px; /* Add spacing between labels */
+}
+
+.edit-profile-input {
+  width: 70%; /* Adjusted width */
+  height: 40px; /* Increased height for better input visibility */
+  background: #f8f8f8;
+  margin: 10px auto; /* Adjusted margin */
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px; /* Adjusted font size */
+}
+
+.swap {
+  color: white;
+  font-size: 16px; /* Adjusted font size */
+  margin-top: 20px; /* Add margin top */
+}
+
+.confirm-changes-btn {
+  align-self: center;
+  background-color: #eb1818; /* Urban theme red */
+  color: white;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 15px 30px; /* Increased padding for better button visibility */
+  margin: 20px auto; /* Adjusted margin */
+  text-decoration: none;
+  border-radius: 30px; /* Rounded corners */
+  border: 2px solid transparent; /* Transparent border */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px; /* Soft shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.confirm-changes-btn:hover {
+  background-color: #d90000; /* Darker red on hover */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px; /* Enhance shadow on hover */
+  transform: translateY(-3px); /* Lift button on hover */
+}
+
+.confirm-changes-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px; /* Soft focus shadow */
+}
+
+.merchandise-form-page {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; /* Adjusted to 100vh for full viewport height */
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+.merchandise-form-container {
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; /* Adjusted to 100% to take full height of parent */
+}
+
+#merchandiseForm {
+  width: 350px;
+  height: auto; /* Adjusted to auto to fit content */
+  background-color: rgba(69, 27, 4, 0.9);
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.merchandise-form-body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.merchandise-input {
+  width: 70%;
+  height: 40px;
+  background: #f8f8f8;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.swap {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.confirm-merchandise-btn {
+  align-self: center;
+  background-color: #eb1818;
+  color: white;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 15px 30px;
+  margin: 20px auto;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+  transition: all 0.3s ease;
+}
+
+.confirm-merchandise-btn:hover {
+  background-color: #d90000;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
+  transform: translateY(-3px);
+}
+
+.confirm-merchandise-btn:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px;
+}
+
+.new-merchandise-banner {
+  color: white;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.user-card {
+  background-color: #34495e; /* Dark background color */
+  border: 1px solid #2c3e50; /* Border color */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+  color: #ecf0f1; /* Text color */
+  font-family: 'Georgia', serif; /* Match the font with the rest of your page */
+}
+
+.user-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #2c3e50; /* Border around avatar */
+  box-shadow: 0 0 0 4px #34495e; /* Inner shadow for depth */
+}
+
+.user-info {
+  margin-top: 10px;
+}
+
+.user-info h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  font-size: 16px;
+}
+
+.edit-profile-link {
+  color: #3498db; /* Link color */
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.edit-profile-link:hover {
+  text-decoration: underline;
+}
+h1, p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ecf0f1; /* Light text color */
+  margin: 0.83em 0;
+  font-family: 'Georgia', serif; /* Match the serif font of your page */
+}
+
+.button-55 {
+  align-self: center;
+  background-color: #3498db; /* Blue background color */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  color: #ffffff; /* White text color */
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Georgia', serif; /* Match the serif font of your page */
+  font-size: 1rem;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-55:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  transform: translateY(-2px); /* Move button slightly up */
+}
+
+.button-55:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on focus */
+}
+
+/* Unique styling for headings and paragraphs */
+h1 {
+  font-size: 2em;
+  color: #ffffff; /* White color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+}
+
+p {
+  font-size: 1.2em;
+  color: #bdc3c7; /* Light gray color */
+}
+
+/* Example additional styling */
+.user-info {
+  background-color: #2c3e50; /* Dark background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.user-info h2 {
+  color: #ffffff; /* White color */
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  color: #bdc3c7; /* Light gray color */
+}

@@ -1,9 +1,8 @@
 from sqlalchemy_serializer import SerializerMixin
-from sqlalchemy.ext.associationproxy import association_proxy
-from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy.ext.associationproxy import association_proxy  # Ensure this is imported
 from sqlalchemy.orm import validates
-from config import flask_bcrypt, db
-from sqlalchemy import event, LargeBinary
+from config import db
+from sqlalchemy import event
 import stripe
 import os
 
